@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sito" content="width=device-width, initial-scale=1.0">
+    <title>Tokenvestor - Registrazione</title>
+    <link rel="stylesheet" href="sito_test.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img src="immagini/Logo.png" alt="Logo" width="180" height="90"> <br>
+    </header>
+    <h2 id="centro"> Richiesta di registrazione</h2>
+    <form id="registrazione" action="mailto:mattia.simeone@edu.unito.it" method="post" enctype="text/plain">
+    <label for="Nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br>
+
+    <label for="Cognome">Cognome:</label>
+    <input type="text" id="cognome" name="cognome"> <br>
+
+    <label for="Azienda">Nome Azienda*:</label>
+    <input type="text" id="azienda" name="azienda" required> <br>
+
+    <label for="C.F.">C.F.*:</label>
+    <input type="text" id="user" name="user" required> <br>
+    
+    <label for="Password">Password*:</label> 
+    <input type="password" id="password" name="password" required>
+    <button type="button" onclick="togglePasswordVisibility()"style="font-size: 10px;">Mostra/Nascondi</button><br>
+    <br>
+
+
+    <input type="submit" value="Invia richiesta" onclick="inviaEmail()"> 
+
+    <h7>*=campo obbligatorio</h7>
+  </form>
+  <button onclick="TornaAlSito()">Torna al Sito</button>
+  <script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+    var button = document.querySelector("button");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        button.textContent = "Nascondi";
+    } else {
+        passwordInput.type = "password";
+        button.textContent = "Mostra";
+    }
+}
+function TornaAlSito() {
+      // Reindirizza l'utente a un determinato sito
+      window.location.href = "home.html";
+    }
+</script>
+</body>
+
+</html>

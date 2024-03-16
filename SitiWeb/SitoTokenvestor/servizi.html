@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sito" content="width=device-width, initial-scale=1.0">
+    <title>Tokenvestor - Servizi</title>
+    <link rel="stylesheet" href="sito_test.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <header>
+        <img src="immagini/Logo.png" alt="Logo" width="180" height="90"> <br>
+        <h3>Tokenizing asset</h3>
+    </header>
+
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="chi_siamo.html">Chi Siamo</a>
+        <a href="#">Servizi</a>
+        <a href="contatti.html">Contattaci</a>
+    </nav>
+
+        <h2 id="centro">Tokenizzazione</h2>
+        <h3 id="centro">Tecnologia:</h3>
+        <p id="Corpo">
+            La blockchain scelta per la nostra soluzione è <a href="https://polygon.technology/" target="_blank" style="color:black;">Polygon</a>. 
+            Polygon ha diversi vantaggi che danno stabilità al progetto: 
+            grazie allo stretto contatto con Ethereum, è possibile utilizzare lo stesso linguaggio di programmazione ed avere la stessa sicurezza della mainchain, 
+            ma a costi molto più bassi e velocità di transazione più elevata. 
+            I bridge esistenti tra le due blockchain semplificano lo scambio di asset tra le due blockchain. <br>
+            Lo standard utilizzato per la tokenizzazione dell'asset è ERC-20. <br>
+            Grazie allo standard è sufficiente caricare il valore del minibond su un wallet 
+            ed inserirne l’indirizzo all’interno dello smart contract per procedere con la tokenizzazione del capitale.
+        </p>
+        <h2 id="centro">Consulenza</h2>
+        <p id="Corpo">
+           Il nostro team offre un servizio di consulenza ai clienti: per poterla richiedere è sufficiente fare la richiestra di registrazione
+           e, completati i nostri controlli, riceverà una mail di ritorno con userID e password da utilizzare per avere accesso all'area di consulenza.
+           Dovrà fornire diverse indormazioni, come capitale da tokenizzare, numero di token che vorrà emettere e prezzo per token. <br>
+           Il nostro team le fornirà le infomazioni necessarie per poter avviare al meglio il suo percorso di tokenizzazione dell'asset.
+        </p>
+       
+       
+        <h3 id="centro">Scegli un'opzione:</h3>
+<p id="centro">
+    <button onclick="apriRegistrazione()">Richiesta di Registrazione</button>
+    <button onclick="apriAccesso()">Accesso</button>
+</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tokenvestor. Tutti i diritti riservati.</p>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+        var navbar = document.getElementById('navbar'); 
+        var sticky = navbar.offsetTop;
+      
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add('fixed');
+          } else {
+            navbar.classList.remove('fixed');
+          }
+        }
+      </script>
+       <script>
+        function apriRegistrazione() {
+            window.location.href = "registrazione.html";
+        }
+
+        function apriAccesso() {
+            window.location.href = "accesso.html";
+        }
+    </script>
+   
+
+</body>
+</html>

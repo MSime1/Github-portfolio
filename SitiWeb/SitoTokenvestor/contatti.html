@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sito" content="width=device-width, initial-scale=1.0">
+    <title>Tokenvestor - Contattaci</title>
+    <link rel="stylesheet" href="sito_test.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <img src="immagini/Logo.png" alt="Logo" width="180" height="90"> <br>
+        <h3>Tokenizing asset</h3>
+    </header>
+
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="chi_siamo.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="#">Contattaci</a>
+    </nav>
+
+    <section>
+        <h2 id="centro">Contattaci</h2>
+        <p id="Corpo">
+        <form action="mailto:mattiasime98@gmail.com" method="post" enctype="text/plain">
+            <label for="message">Messaggio:</label><br><br>
+            <textarea id="message" name="message" rows="8" cols="60"></textarea><br>
+            <input type="submit" value="Invia">
+        </form>
+        </p>
+    
+    </section>
+    <section>
+        <h2 id="centro">
+            Sede:
+        </h2>
+        <div id="mappa" style="text-align:center;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.0718246275596!2d8.562512275364217!3d45.82984427108233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478676bd3b9580a9%3A0xf57b62d0f465d095!2sViale%20Vittorio%20Veneto%2C%2028040%20Lesa%20NO!5e0!3m2!1sit!2sit!4v1706889061640!5m2!1sit!2sit" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tokenvestor. Tutti i diritti riservati.</p>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+        var navbar = document.getElementById('navbar'); // Sostituisci 'navbar' con l'ID della tua barra di navigazione
+        var sticky = navbar.offsetTop;
+      
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add('fixed');
+          } else {
+            navbar.classList.remove('fixed');
+          }
+        }
+      </script>
+
+</body>
+</html>
+

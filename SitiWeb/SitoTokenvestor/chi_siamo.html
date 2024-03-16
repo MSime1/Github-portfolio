@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sito" content="width=device-width, initial-scale=1.0">
+    <title>Tokenvestor - Chi siamo</title>
+    <link rel="stylesheet" href="sito_test.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <header>
+            <img src="immagini/Logo.png" alt="Logo" width="180" height="90"> <br>
+            <h3>Tokenizing asset</h3>
+    </header>
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="#">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contattaci</a>
+    </nav>
+
+    <section>
+        <h2>Founder</h2>
+        <p id="Corpo">
+          <img src="immagini/Bujtina.jpeg" alt="Bujtina Masati" style="width: 200px; height: 200px;"> 
+          <a href="https://www.linkedin.com/in/bujtina-masati-8b95491b3" target="_blank" style="color:black;">Bujtina Masati</a> - Profilo Economico Finanziario <br>
+          <br>
+          <br>
+          <img src="immagini/Jhon.jpeg" alt="Jhon Bedoya" style="width: 200px; height: 200px;">
+          <a href="https://www.linkedin.com/in/jhon-bedoya-32212939" target="_blank" style="color:black;">John Bedoya</a> - Profilo Telecommunications - Infrastrutture <br>
+           <br>
+           <br>
+           <img src="immagini/Laura.jpeg" alt="Laura Da Ros" style="width: 200px; height: 200px;">
+          <a href="https://www.linkedin.com/in/laura-da-ros-674051174" target="_blank" style="color:black;">Laura Da Ros</a> - Profilo Profilo Finance - Issuing Agent <br>
+           <br>
+           <br>
+           <img src="immagini/Mattia.jpg" alt="Mattia Simeone" style="width: 200px; height: 200px;">
+           <a href="https://www.linkedin.com/in/mattia-simeone-4a0866271/" target="_blank" style="color:black;">Mattia Simeone</a> -  Profilo IT front-end developer <br>
+
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tokenvestor. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+        var navbar = document.getElementById('navbar'); // Sostituisci 'navbar' con l'ID della tua barra di navigazione
+        var sticky = navbar.offsetTop;
+      
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add('fixed');
+          } else {
+            navbar.classList.remove('fixed');
+          }
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #713535;
+}
+
+header {
+    background-color: #713535;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.porzione {
+    background-color: #713535;
+    padding: 40px;
+}
+
+.testo-home {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+
+nav {
+    background-color: #8d3535;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+}
+nav a:hover {
+    color: #333; /* Nuovo colore al passaggio del mouse */
+}
+
+section {
+    padding: 2em;
+}
+
+#centro{
+    text-align:center
+
+}
+#Corpo{
+    padding:1em;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 97.5%;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+#mappa {
+    height: 400px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    text-align: center; /* Centra il testo negli altri campi di input */
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left; /* Allinea il testo a sinistra nel campo textarea */
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  button {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  #ilTuoForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #Informazioni {
+    /* Rimuovi l'altezza fissa */
+    height: auto;
+    /* Imposta il word-wrap per far andare a capo il testo */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    /* Permetti lo scorrimento verticale quando il testo supera l'altezza del campo */
+    overflow-y: auto;
+  }

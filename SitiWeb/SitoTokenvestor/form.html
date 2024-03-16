@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sito" content="width=device-width, initial-scale=1.0">
+    <title>Tokenvestor - Consulenza</title>
+    <link rel="stylesheet" href="sito_test.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <header>
+    <img src="immagini/Logo.png" alt="Logo" width="180" height="90"> <br>
+    <h3>Tokenizing asset</h3>
+</header>
+
+  <h2 id="centro" >Richiedi il tuo preventivo</h2>
+  <br>
+
+  <form id="ilTuoForm" action="mailto:mattia.simeone@edu.unito.it" method="post" enctype="text/plain">
+    <label for="Nome">Nome*:</label>
+    <input type="text" id="nome" name="nome" required><br>
+
+    <label for="Cognome">Cognome*:</label>
+    <input type="text" id="cognome" name="cognome" required> <br>
+
+    <label for="Azienda">Nome Azienda*:</label>
+    <input type="text" id="azienda" name="azienda" required> <br>
+
+    <label for="Telefono">Numero di Telefono:</label>
+    <input type="tel" id="telefono" name="telefono"> <br>
+    
+    <label for="Informazioni">Dettagli*:</label> 
+    <textarea id="info" name="info" rows="8" cols="60"></textarea>
+    <br>
+
+
+    <input type="submit" value="Invia Form" onclick="inviaEmail()"> 
+
+    <h7>*=campo obbligatorio</h7>
+  </form>
+  <br>
+  <button onclick="TornaAlSito()">Torna al Sito</button>
+  <script>
+    function inviaEmail() {
+      window.history.back();
+    }
+    function TornaAlSito() {
+      // Reindirizza l'utente a un determinato sito
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>

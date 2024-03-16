@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Sito" content="width=device-width, initial-scale=1.0">
+    <title>Tokenvestor - Accesso</title>
+    <link rel="stylesheet" href="sito_test.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <img src="immagini/Logo.png" alt="Logo" width="180" height="90"> <br>
+       
+    </header>
+    <h2 id="centro">Accesso</h2>
+
+    <form onsubmit="verificaAccesso(); return false;">
+        UserID: <input type="text" id="userid" name="userid" required><br>
+        Password: <input type="password" id="password" name="password" required><br>
+        <button type="button" onclick="togglePasswordVisibility()"style="font-size: 10px;">Mostra/Nascondi</button><br><br>
+        <input type="submit" value="Invio">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="TornaAlSito()">Torna al Sito</button>
+
+    <script>
+        function verificaAccesso() {
+            var userid = document.getElementById("userid").value;
+            var password = document.getElementById("password").value;
+
+            // Confronto manuale delle credenziali
+            if ((userid === "utente1" && password === "password1") ||
+                (userid === "utente2" && password === "password2") ||
+                (userid === "utente3" && password === "password3")) {
+                // Reindirizzamento al sito corretto
+                window.location.href = "form.html";
+            } else {
+                // Alert di errore e reindirizzamento al sito sbagliato
+                alert("Errore: Credenziali non valide");
+                window.location.href = "registrazione.html";
+            }
+        }
+        function TornaAlSito() {
+      // Reindirizza l'utente a un determinato sito
+      window.location.href = "home.html";
+    }
+    </script>
+    <script>
+     function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        var button = document.querySelector("button");
+    
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            button.textContent = "Nascondi";
+        } else {
+            passwordInput.type = "password";
+            button.textContent = "Mostra";
+        }
+    }
+    </script>
+
+</body>
+</html>
+
+
