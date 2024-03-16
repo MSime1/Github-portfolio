@@ -1,1 +1,1 @@
-My Solidity Project
+My Project
